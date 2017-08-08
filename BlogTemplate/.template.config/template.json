@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Microsoft",
+  "classifications": [ "Common", "Console" ],
+  "name": "Blog",
+  "generatorVersions": "[1.0.0.0-*)",
+  "description": "A project for creating a blog application",
+  "groupIdentity": "Microsoft.Web.Blog",
+  "precedence": "100",
+  "identity": "Microsoft.Web.Blog.CSharp",
+  "shortName": "Blog",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BlogTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "navbarcolor": {
+      "type": "parameter",
+      "datatype": "text",
+      "defaultValue": "6abffb",
+      "replaces": "6abffb",
+      "description": "This changes the navbar color"
+    },
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netcoreapp2.0",
+          "description": "Target netcoreapp2.0"
+        }
+      ],
+      "replaces": "netcoreapp2.0",
+      "defaultValue": "netcoreapp2.0"
+    }
+  }
+  }
